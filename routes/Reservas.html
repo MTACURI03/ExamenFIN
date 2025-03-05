@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+<body></body>
+    <div class="container">
+        <h1>ReserCar</h1>
+        <div>
+            <img class="imagenes" src="imagenes/perfil.jpg" alt="">
+        </div>
+        <div class="carros1">
+            <button id="actualizarButton">Actualizar Reservas</button>
+        </div>
+
+        <div class="carros2">
+            <button id="regresarButton">Regresar</button>
+        </div>
+        <div id="formulario-actualizar" class="formulario">
+            <form id="formActualizar">
+                <label for="nombre">Cliente:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="tipo">Auto:</label>
+                <input type="text" id="tipo" name="tipo" required>
+                
+                <label for="motor">Fecha:</label>
+                <input type="date" id="motor" name="motor" required>
+                
+                <label for="anio">Restante:</label>
+                <input type="text" id="anio" name="anio" required>
+            </form>
+    </div>
+    <script>
+        document.getElementById('actualizarButton').addEventListener('click', function() {
+            alert("No puedes realizar esa acción en este momento.");
+        });
+        document.getElementById('regresarButton').addEventListener('click', function() {
+            window.location.href = "clientes.html";
+        });
+    </script>
+</body>
+</html>
